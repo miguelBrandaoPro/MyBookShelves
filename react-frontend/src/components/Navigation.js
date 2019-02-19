@@ -1,12 +1,5 @@
 import React from 'react';
 
-const NavItem = props => {
-    return (
-      <li className="nav-item">
-        <a href={props.path} className="nav-link">{props.name}</a>
-      </li>
-    );
-  }
 
 class Navigation extends React.Component {
     render() {
@@ -18,7 +11,7 @@ class Navigation extends React.Component {
                         <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/">Link</a>
+                        <a className="nav-link" href="/achats">Achats</a>
                     </li>
                     </ul>
                     <form className="form-inline my-2 my-lg-0">
