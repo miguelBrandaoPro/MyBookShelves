@@ -7,7 +7,7 @@ class Home extends React.Component {
         return (
             <div className="row">
                 <div className="col-8">
-                <LastPurchases />
+                <LastPurchases count={5}  />
                 </div>
                 <div className="col-sm">
                 <LastReadings />

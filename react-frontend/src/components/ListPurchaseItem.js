@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class ListPurchaseItem extends React.Component {
 
@@ -8,7 +9,7 @@ class ListPurchaseItem extends React.Component {
 
     render() {
         return (
-            <li className="list-group-item">{this.props.obj.title} <span className="font-italic">par {this.props.obj.author}</span></li>
+            <li className="list-group-item"><Link to={`/livres/${this.props.obj.isbn}`} >{this.props.obj.title}</Link> <span className="font-italic">par {this.props.obj.author}</span></li>
         )
     }
 }
